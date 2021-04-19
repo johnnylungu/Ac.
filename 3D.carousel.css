@@ -1,0 +1,186 @@
+body{
+    background-color: #223;
+}
+
+.abs-center {
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+}
+
+.carousel {
+    background-color: #5554;
+    width: 600px;
+    height: 600px;
+    perspective: 700px;
+    
+
+    
+
+
+
+
+
+}
+
+.carousel .slides {
+    background-color: #7774;
+    width: 500px;
+    height: 500px;
+    transform: rotateX(35deg);
+    perspective: 600px;
+
+    animation: rot 10s;
+    opacity: 0.9;
+    
+
+    
+
+
+
+    
+
+
+}
+
+.carousel .slides div {
+    background-color: #131;
+    width: 300px;
+    height: 500px;
+    
+    
+
+    transform-origin: center center -85px;
+
+}
+    
+
+
+
+.carousel .slides div:nth-child(1) {
+    transform: rotateX(-42deg)   scaley(1);
+
+z-index: 1;
+animation: rot-1 30s infinite linear;
+background-image: linear-gradient(  );
+
+
+}
+
+.carousel .slides div .img-2 {
+    border: 2px solid red;
+    transform: rotate(180deg);
+    background-image: linear-gradient(360deg, #678 , #890 50%);
+    
+
+    
+
+
+}
+.carousel .slides div:nth-child(2) {
+    transform: rotateX(-42deg) rotateY(120deg) scaley(1);
+    animation: rot-2 30s infinite linear;
+    
+
+    
+}
+
+
+
+
+.carousel .slides div:nth-child(3) {
+    transform: rotateX(-42deg) rotateY(240deg)  scaley(1);
+
+    animation: rot-3 30s infinite linear;
+    
+}
+
+
+
+.carousel img {
+    opacity: 0.6;
+    
+    
+    
+  
+}
+.carousel img:hover {
+    opacity: 1;
+}
+
+
+
+@keyframes rot-1 {
+    0% {
+        transform: rotateX(-42deg) rotatey(0deg) scaley(1);
+        z-index: 1;
+        filter: brightness(1.50);
+    } 
+    44% {
+        transform: rotateX(-42deg) rotatey(158.4deg) scaleY(1);
+        z-index: 0;
+        filter: brightness(0);
+    }
+    100% {
+        transform: rotateX(-42deg) rotatey(360deg) scaley(1);
+        z-index: 2;
+        filter: brightness(1.50);
+        
+    } }
+
+@keyframes rot-2 {
+    0% {
+        transform: rotateX(-42deg) rotatey(120deg) scaley(1);
+        z-index: 0;
+        filter: brightness(0);
+        
+    }
+    88% {
+        transform: rotateX(-42deg) rotatey(436.8deg) scaleY(1);
+        z-index: 1;
+        filter: brightness(1.50);
+    }
+
+    100% {
+        transform: rotateX(-42deg) rotatey(480deg) scaleY(1);
+        z-index: 2;
+        filter: brightness(1.50);
+    }
+}
+
+
+@keyframes rot-3 {
+    0% {
+        transform: rotateX(-42deg) rotatey(240deg) scaley(1);
+        filter: brightness(1.50);
+        
+    }
+       
+
+   /* 88% {
+        transform: rotateX(-42deg) rotatey(556.8deg) scaleY(1);
+        z-index: -1;
+    }*/
+
+
+    100% {
+        transform: rotateX(-42deg) rotatey(600deg) scaleY(1);
+        filter: brightness(0);
+       /* z-index: -1;8*/
+    }
+    }
+
+
+
+
+
+
+
+
+
+
